@@ -5,13 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="js/script.js" defer></script>
   </head>
+  
   <body>
+    <!-- header -->
+    <section class="header">
+      <h1 class="header-title">ナビゲーションサンプルその１</h1>
+      <p class="header-sub-title">途中からナビゲーションを固定</p>
+      <ul class="header-nav">
+        <li><a class="nav-tab" href="#content1">PROFILE</a></li>
+        <li><a class="nav-tab" href="#content2">CONTENT2</a></li>
+        <li><a class="nav-tab" href="#content3">CONTENT3</a></li>
+        <li><a class="nav-tab" href="#content4">CONTENT4</a></li>
+        <li><a class="nav-tab" href="#content5">CONTENT5</a></li>
+      </ul>
+    </section>
+
+    <section class="contents">
+      <div class="content" id="content1">
+        <h2 class="content-title">PROFILE</h2>
+        <p>something about content1</p>
+      </div>
+      <div class="content" id="content2">
+        <h2 class="content-title">CONTENT2</h2>
+        <p>something about content2</p>
+      </div>
+      <div class="content" id="content3">
+        <h2 class="content-title">CONTENT3</h2>
+        <p>something about content3</p>
+      </div>
+      <div class="content" id="content4">
+        <h2 class="content-title">CONTENT4</h2>
+        <p>something about content4</p>
+      </div>
+      <div class="content" id="content5">
+        <h2 class="content-title">CONTENT5</h2>
+        <p>something about content5</p>
+      </div>
+    </section>
+
     <h1 class="title">Profile</h1>
     <div id="profile">
-      <img id="myPhoto" src="images/my_photo.jpg" alt="" />
-      <div>
+      <div id="profileImage">
+        <img id="myPhoto" src="images/icon.jpg" alt="" />
+      </div>
+      <div id="profileText">
         <h3>Kaito Morita / 森田 海斗</h3>
         <p>私は森田海斗です。</p>
       </div>

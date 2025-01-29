@@ -6,19 +6,32 @@
   margin: auto;
   display: flex;
   max-width: 1200px;
+  gap: 30px;
+  padding: 20pxß;
+}
+
+#profileImage {
+  flex: 1;
+  max-width: 40%;
+  height: auto;
+  padding: 20px;
+  /* border: 2px solid; */
+  /* border-radius: 50%; */
+  object-fit: cover;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 #myPhoto {
-  flex: 1;
-  max-width: 50%;
-  display: grid;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   border: 2px solid;
+
   border-radius: 50%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
-#profile div {
+#profileText {
   flex: 1;
+  max-width: 60%;
 }
