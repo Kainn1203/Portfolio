@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/career.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="js/script.js" defer></script>
   </head>
   
@@ -18,17 +18,17 @@
       <p class="header-sub-title">途中からナビゲーションを固定</p>
       <ul class="header-nav">
         <li><a class="nav-tab" href="#content1">PROFILE</a></li>
-        <li><a class="nav-tab" href="#content2">CONTENT2</a></li>
+        <li><a class="nav-tab" href="#content2">CAREER</a></li>
         <li><a class="nav-tab" href="#content3">CONTENT3</a></li>
         <li><a class="nav-tab" href="#content4">CONTENT4</a></li>
         <li><a class="nav-tab" href="#content5">CONTENT5</a></li>
       </ul>
     </section>
-
+    <!-- main -->
     <section class="contents">
+      <!-- profile -->
       <div class="content" id="content1">
         <h2 class="content-title">PROFILE</h2>
-        <h1 class="title">Profile</h1>
         <div id="profile">
           <div id="profileImage">
             <img id="myPhoto" src="images/icon.jpg" alt="" />
@@ -42,9 +42,46 @@
           </div>
         </div>
       </div>
+      <!-- career -->
       <div class="content" id="content2">
-        <h2 class="content-title">CONTENT2</h2>
-        <p>something about content2</p>
+        <h2 class="content-title">CAREER</h2>
+        <div id="career">
+          <div id="lineDiv">
+            <div id="line"></div>
+          </div>
+          <div id="yearContents">
+            <div class="yearContent" id="highSchool">
+              <h3>2017</h3>
+              <p>都立小松川高等学校　入学</p>
+              <p>中学から続けている剣道部に所属</p>
+              <p>~将来のことは何も考えていなかった</p>
+              <img src="images/kendo.jpg" alt="" hidden>
+              <p class ="yearText" hidden>とりあえず都立高校に進学し、中学から続けている剣道部に入部する。<br>実績：剣道3段, 区民大会10代の部第3位 </p>
+            </div>
+            <div class="yearContent" id="univercity">
+              <h3>2020</h3>
+              <p>芝浦工業大学　入学</p>
+              <p>ロボットタスクシステム研究室に所属</p>
+              <p>「熟練者の作業動作解析に基づく金型磨きの自動化移管する研究」</p>
+              <p>~研究活動を通してITプログラミングに興味を持つ</p>
+              <img src="images/univercity.png" alt="" hidden>
+              <p class="yearText" hidden>大学入試失敗</p>
+            </div>
+            <div class="yearContent" id="graduateSchool">
+              <h3>2024</h3>
+              <p>東京科学大学大学院　入学</p>
+              <p>無線通信の研究室に所属</p>
+              <p>「B5G, デジタルツインを活用したARグラスによる交通安全性向上に関する研究」</p>
+              <p>~周りの環境に影響を受け、研究・就活に力をいれる</p>
+              <img src="images/guraduateSchool.png" alt="" hidden>
+              <p class="yearText" hidden>東工大にこれた</p>
+            </div>
+          </div>
+          <div id="hoverContent">
+            <img id="hoverImage" src="images/kendo.jpg" alt="kendo">
+            <p id="hoverText">とりあえず都立高校に進学し、中学から続けている剣道部に入部する。<br>実績：剣道3段, 区民大会10代の部第3位 </p>
+          </div>
+        </div>
       </div>
       <div class="content" id="content3">
         <h2 class="content-title">CONTENT3</h2>
