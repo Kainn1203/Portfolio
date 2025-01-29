@@ -12,7 +12,7 @@
 
 #profileImage {
   flex: 1;
-  max-width: 40%;
+  max-width: 30%;
   height: auto;
   padding: 20px;
   /* border: 2px solid; */
@@ -33,5 +33,5 @@
 
 #profileText {
   flex: 1;
-  max-width: 60%;
+  max-width: 70%;
 }
