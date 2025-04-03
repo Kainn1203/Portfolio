@@ -19,8 +19,6 @@ const hoverImage = hoverContent.querySelector('img');
 const hoverText = document.querySelector('#hoverText');
 const yearContents = document.querySelectorAll('.yearContent');
 
-console.log(hoverText.textContent);
-
 yearContents.forEach((yearContent) => {
     yearContent.addEventListener('mouseenter', () => {
         const yearImage = yearContent.querySelector('img');
@@ -36,7 +34,6 @@ yearContents.forEach((yearContent) => {
 const animateFade = (entries, obs) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
-            console.log('fadein!!');
             entry.target.animate(
                 {
                     opacity: [0, 1],
@@ -44,7 +41,7 @@ const animateFade = (entries, obs) => {
                     translate: ['0 4rem', 0],
                 },
                 {
-                    duration: 2000,
+                    duration: 1000,
                     easing: 'ease',
                     fill: 'forwards',
                 }
