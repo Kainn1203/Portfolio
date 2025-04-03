@@ -1,0 +1,17 @@
+#skill {
+    width : 100%;
+}
+
+#frontend, #backend, #infra{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skillCulum {
+    width : 20%;
+}
+
+.skillBody {
+    width : 60%;
+    text-align: left;
+}

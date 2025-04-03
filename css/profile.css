@@ -22,7 +22,6 @@
   width: 100%;
   height: auto;
   border: 2px solid;
-
   border-radius: 50%;
   object-fit: cover;
 }
@@ -30,4 +29,21 @@
 #profileText {
   flex: 1;
   max-width: 70%;
+}
+#profileText p {
+  text-align: left;
+}
+
+#profileName, #profileAge, #profileMBTI, #profileHobby {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profileCulum {
+  width : 20%;
+}
+
+.profileBody {
+  width : 80%;
+  text-align: left;
 }

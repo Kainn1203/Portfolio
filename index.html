@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/career.css">
+    <link rel="stylesheet" href="css/development.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js" defer></script>
   </head>
@@ -14,14 +17,14 @@
   <body>
     <!-- header -->
     <section class="header">
-      <h1 class="header-title">PORTFOLIO</h1>
-      <p class="header-sub-title">途中からナビゲーションを固定</p>
+      <h1 class="header-title">My PORTFOLIO</h1>
+      <p class="header-sub-title">〜 森田海斗の歩んだ人生 〜</p>
       <ul class="header-nav">
         <li><a class="nav-tab" href="#content1">PROFILE</a></li>
         <li><a class="nav-tab" href="#content2">CAREER</a></li>
-        <li><a class="nav-tab" href="#content3">CONTENT3</a></li>
-        <li><a class="nav-tab" href="#content4">CONTENT4</a></li>
-        <li><a class="nav-tab" href="#content5">CONTENT5</a></li>
+        <li><a class="nav-tab" href="#content3">DEVELOPMENT</a></li>
+        <li><a class="nav-tab" href="#content4">SKILL</a></li>
+        <li><a class="nav-tab" href="#content5">CONTACT</a></li>
       </ul>
     </section>
     <!-- main -->
@@ -31,14 +34,42 @@
         <h2 class="content-title">PROFILE</h2>
         <div id="profile">
           <div id="profileImage">
-            <img id="myPhoto" src="images/icon.jpg" alt="" />
+            <img id="myPhoto" src="images/my_photo.png" alt="" />
           </div>
           <div id="profileText">
-            <h3>Name: Kaito Morita / 森田 海斗</h3>
-            <h3>Age: 23</h3>
-            <h3>MBTI: ISTP</h3>
-            <h3>Hobby: Kpop, Travel</h3>
-            <p>私は森田海斗です。芝浦工業大学工学部電気工学科を卒業。現在、東京科学大学大学院工学院電気電子系修士1年。学部時代はロボット制御の研究を行い、現在は無線通信技術を活用したARシステムに関する研究を行っている。</p>
+            <div id="profileName">
+              <div class="profileCulum">
+                <h3>Name : </h3>
+              </div>
+              <div class="profileBody">
+                <h3>Kaito Morita / 森田 海斗</h3>
+              </div>
+            </div>
+            <div id="profileAge">
+              <div class="profileCulum">
+                <h3>Age : </h3>
+              </div>
+              <div class="profileBody">
+                <h3>23</h3>
+              </div>
+            </div>
+            <div id="profileMBTI">
+              <div class="profileCulum">
+                <h3>MBTI : </h3>
+              </div>
+              <div class="profileBody">
+                <h3>ISTP / 巨匠</h3>
+              </div>
+            </div>
+            <div id="profileHobby">
+              <div class="profileCulum">
+                <h3>Hobby : </h3>
+              </div>
+              <div class="profileBody">
+                <h3>KPOP, 旅行, サウナ</h3>
+              </div>
+            </div>
+            <p>私は森田海斗である。芝浦工業大学工学部電気工学科を卒業し、現在は東京科学大学大学院工学院電気電子系修士課程1年生である。学部時代はロボット制御の研究に従事し、現在は無線通信技術を活用したARシステムの研究に取り組んでいる。</p>
           </div>
         </div>
       </div>
@@ -51,7 +82,7 @@
           </div>
           <div id="yearContents">
             <div class="yearContent" id="highSchool">
-              <h3>2017</h3>
+              <h3>2017年</h3>
               <p>都立小松川高等学校　入学</p>
               <p>中学から続けている剣道部に所属</p>
               <p>~将来のことは何も考えていなかった</p>
@@ -59,7 +90,7 @@
               <p class ="yearText" hidden>とりあえず都立高校に進学し、中学から続けている剣道部に入部する。<br>実績：剣道3段, 区民大会10代の部第3位 </p>
             </div>
             <div class="yearContent" id="univercity">
-              <h3>2020</h3>
+              <h3>2020年</h3>
               <p>芝浦工業大学　入学</p>
               <p>ロボットタスクシステム研究室に所属</p>
               <p>「熟練者の作業動作解析に基づく金型磨きの自動化移管する研究」</p>
@@ -68,7 +99,7 @@
               <p class="yearText" hidden>大学入試失敗</p>
             </div>
             <div class="yearContent" id="graduateSchool">
-              <h3>2024</h3>
+              <h3>2024年</h3>
               <p>東京科学大学大学院　入学</p>
               <p>無線通信の研究室に所属</p>
               <p>「B5G, デジタルツインを活用したARグラスによる交通安全性向上に関する研究」</p>
@@ -83,18 +114,83 @@
           </div>
         </div>
       </div>
+      <!-- development -->
       <div class="content" id="content3">
-        <h2 class="content-title">CONTENT3</h2>
-        <p>something about content3</p>
+        <h2 class="content-title">DEVELOPMENT</h2>
+        <div id="development">
+          <div id="reservation">
+            <div class="devIcon">
+              <img src="images/reservation.png" alt="">
+            </div>
+            <div class="devText">
+            <h2> 学園祭予約システム</h2>
+              <p>学園祭で行う研究室デモ展示において、昨年度は待ち時間1時間越えの行列になってしまった。</p>
+              <p>そこで、行列を作らないために予約システムの導入を行った。</p>
+              <p>使用技術：React, supabase</p>
+              <a href="https://github.com/Kainn1203/reservationApp.git"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div id="aid">
+            <div class="devIcon">
+              <img src="images/aid.png" alt="">
+            </div>
+            <div class="devText">
+              <h2> 被災地支援アプリ</h2>
+              <p>1週間インターンに参加し、自社APIを使ったアプリケーション開発を行った。</p>
+              <p>4人チームで主にフロントエンドを担当しました。</p>
+              <p>使用技術：React, Nest.js, MariaDB, Docker</p>
+              <a href="https://github.com/Kainn1203/reservationApp.git"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div id="portfolio">
+            <div class="devIcon">
+              <img src="images/portfolio.png" alt="">
+            </div>
+            <div class="devText">
+              <h2> ポートフォリオ</h2>
+              <p>技術力向上、成果物の公表のためにポートフォリオを作成しました。</p>
+              <p>使用技術：HTML, CSS, JavaScript</p>
+              <a href="https://github.com/Kainn1203/reservationApp.git"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- skill -->
       <div class="content" id="content4">
-        <h2 class="content-title">CONTENT4</h2>
-        <p>something about content4</p>
+        <h2 class="content-title">SKILL</h2>
+        <div id="skill">
+          <div id="frontend">
+            <div class="skillCulum">
+              <h3>フロントエンド</h3>
+            </div>
+            <div class="skillBody">
+              <h3>HTML, CSS, JavaScript, TypeScript, React, Next.js</h3>
+            </div>
+          </div>
+          <div id="backend">
+            <div class="skillCulum">
+              <h3>バックエンド</h3>
+            </div>
+            <div class="skillBody">
+              <h3>Python, C, C#, MySQL, Supabase</h3>
+            </div>
+          </div>
+          <div id="infra">
+            <div class="skillCulum">
+              <h3>インフラ</h3>
+            </div>
+            <div class="skillBody">
+              <h3>Docker, Linux</h3>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- contact -->
       <div class="content" id="content5">
-        <h2 class="content-title">CONTENT5</h2>
-        <p>something about content5</p>
-      </div>
+        <h2 class="content-title">CONTACT</h2>
+        <p><i class="fa-solid fa-envelope"></i> メール：<a href="kai201302@gmail.com">kai201302@gmail.com</a></p>
+        <p>SNS：<a href="https://www.instagram.com/kaito_1203?igsh=MWd4a3NybHd6Y2xzag%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+        <p>GitHub：<a href="https://github.com/Kainn1203"><i class="fab fa-github"></i> Kainn1203</a></p>      </div>
     </section>
 
   </body>
