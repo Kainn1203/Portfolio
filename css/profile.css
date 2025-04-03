@@ -34,7 +34,7 @@
   text-align: left;
 }
 
-#profileName, #profileAge, #profileMBTI, #profileHobby {
+.profileTextLine {
   display: flex;
   justify-content: flex-end;
 }

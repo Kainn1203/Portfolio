@@ -22,11 +22,42 @@ const yearContents = document.querySelectorAll('.yearContent');
 console.log(hoverText.textContent);
 
 yearContents.forEach((yearContent) => {
-    yearContent.addEventListener('mouseover', () => {
+    yearContent.addEventListener('mouseenter', () => {
         const yearImage = yearContent.querySelector('img');
         const yearText = yearContent.querySelector('.yearText');
         console.log(yearText.textContent);
         hoverImage.src = yearImage.src;
         hoverText.textContent = yearText.textContent;
+        hoverImage.animate({opacity: [0, 1]}, 500);
+
     })
 })
+
+const animateFade = (entries, obs) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            console.log('fadein!!');
+            entry.target.animate(
+                {
+                    opacity: [0, 1],
+                    filter: ['blur(.4rem)', 'blur(0)'],
+                    translate: ['0 4rem', 0],
+                },
+                {
+                    duration: 2000,
+                    easing: 'ease',
+                    fill: 'forwards',
+                }
+            );
+            obs.unobserve(entry.target);
+        }
+    });
+};
+
+const fadeObserver = new IntersectionObserver(animateFade);
+
+const fadeElements = document.querySelectorAll('.fadein');
+
+fadeElements.forEach((fadeElement) => {
+    fadeObserver.observe(fadeElement);
+});

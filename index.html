@@ -31,13 +31,13 @@
     <section class="contents">
       <!-- profile -->
       <div class="content" id="content1">
-        <h2 class="content-title">PROFILE</h2>
-        <div id="profile">
+        <h2 class="content-title fadein">PROFILE</h2>
+        <div id="profile" class="fadein">
           <div id="profileImage">
             <img id="myPhoto" src="images/my_photo.png" alt="" />
           </div>
           <div id="profileText">
-            <div id="profileName">
+            <div class="profileTextLine">
               <div class="profileCulum">
                 <h3>Name : </h3>
               </div>
@@ -45,7 +45,7 @@
                 <h3>Kaito Morita / 森田 海斗</h3>
               </div>
             </div>
-            <div id="profileAge">
+            <div class="profileTextLine">
               <div class="profileCulum">
                 <h3>Age : </h3>
               </div>
@@ -53,7 +53,7 @@
                 <h3>23</h3>
               </div>
             </div>
-            <div id="profileMBTI">
+            <div class="profileTextLine">
               <div class="profileCulum">
                 <h3>MBTI : </h3>
               </div>
@@ -61,7 +61,7 @@
                 <h3>ISTP / 巨匠</h3>
               </div>
             </div>
-            <div id="profileHobby">
+            <div class="profileTextLine">
               <div class="profileCulum">
                 <h3>Hobby : </h3>
               </div>
@@ -69,56 +69,63 @@
                 <h3>KPOP, 旅行, サウナ</h3>
               </div>
             </div>
-            <p>私は森田海斗である。芝浦工業大学工学部電気工学科を卒業し、現在は東京科学大学大学院工学院電気電子系修士課程1年生である。学部時代はロボット制御の研究に従事し、現在は無線通信技術を活用したARシステムの研究に取り組んでいる。</p>
+            <p>はじめまして。森田海斗と申します。
+              芝浦工業大学工学部電気工学科を卒業し、現在は東京科学大学大学院 工学院 電気電子系 修士課程に在籍しています。
+              学部時代はロボットの制御に関する研究に取り組み、現在は無線通信技術を活用したARシステムの開発・研究を行っています。
+              テクノロジーを通じて人の生活をより便利で豊かにすることを目指し、日々学びを深めています。</p>
           </div>
         </div>
       </div>
       <!-- career -->
       <div class="content" id="content2">
-        <h2 class="content-title">CAREER</h2>
+        <h2 class="content-title fadein">CAREER</h2>
         <div id="career">
           <div id="lineDiv">
             <div id="line"></div>
           </div>
           <div id="yearContents">
-            <div class="yearContent" id="highSchool">
+            <div class="yearContent fadein" id="highSchool">
               <h3>2017年</h3>
               <p>都立小松川高等学校　入学</p>
               <p>中学から続けている剣道部に所属</p>
               <p>~将来のことは何も考えていなかった</p>
               <img src="images/kendo.jpg" alt="" hidden>
-              <p class ="yearText" hidden>とりあえず都立高校に進学し、中学から続けている剣道部に入部する。<br>実績：剣道3段, 区民大会10代の部第3位 </p>
+              <p class ="yearText" hidden>都立高校に進学し、中学から続けていた剣道部に入部しました。剣道三段を取得し、区民大会10代の部で第3位、団体戦では都大会にも出場するなど、仲間とともに楽しく、かつ成果も出しながら充実した部活動を行っていました。
+                高校2年の冬頃から国立大学を志望して受験勉強に励みましたが、思うような結果が出ず、挫折も経験しました。</p>
             </div>
-            <div class="yearContent" id="univercity">
+            <div class="yearContent fadein" id="univercity">
               <h3>2020年</h3>
               <p>芝浦工業大学　入学</p>
               <p>ロボットタスクシステム研究室に所属</p>
               <p>「熟練者の作業動作解析に基づく金型磨きの自動化移管する研究」</p>
               <p>~研究活動を通してITプログラミングに興味を持つ</p>
               <img src="images/univercity.png" alt="" hidden>
-              <p class="yearText" hidden>大学入試失敗</p>
+              <p class="yearText" hidden>大学入試に思うような結果が出ず、入学当初はコロナ禍による外出自粛の影響もあり、1年目はなかなかモチベーションが上がらない時期が続きました。
+                しかし、2年次からは対面授業が再開され、学びの機会が広がる中で塾講師のアルバイトも始め、人に教えることの楽しさとやりがいを実感しました。
+                3年生後期からは研究室に配属され、移動ロボットに関する制御の研究に取り組みました。4年次からは企業との共同研究に参加し、熟練者が行う作業の動作を自動化することをテーマに研究を進めました。</p>
             </div>
-            <div class="yearContent" id="graduateSchool">
+            <div class="yearContent fadein" id="graduateSchool">
               <h3>2024年</h3>
               <p>東京科学大学大学院　入学</p>
               <p>無線通信の研究室に所属</p>
               <p>「B5G, デジタルツインを活用したARグラスによる交通安全性向上に関する研究」</p>
               <p>~周りの環境に影響を受け、研究・就活に力をいれる</p>
               <img src="images/guraduateSchool.png" alt="" hidden>
-              <p class="yearText" hidden>東工大にこれた</p>
+              <p class="yearText" hidden>東京工業大学大学院に進学し、現在は無線通信に関する研究室に所属しています。学部時代はロボティクス系の研究に取り組んでいたため、分野が変わり新たに覚えることも多く、さらに就職活動も重なり忙しい日々を過ごしました。
+                そんな中、夏のインターンをきっかけにWeb開発に興味を持ち、現在は修士論文に向けて研究を進める傍ら、独学でWeb技術の習得にも取り組んでいます。</p>
             </div>
           </div>
-          <div id="hoverContent">
+          <div id="hoverContent" class="fadein">
             <img id="hoverImage" src="images/kendo.jpg" alt="kendo">
-            <p id="hoverText">とりあえず都立高校に進学し、中学から続けている剣道部に入部する。<br>実績：剣道3段, 区民大会10代の部第3位 </p>
+            <p id="hoverText">都立高校に進学し、中学から続けている剣道部に入部する。剣道3段, 区民大会10代の部第3位, 団体戦で都大会出場など、楽しくそれなりの成果を出しながら充実した部活動をしていた。2年性の冬頃から国立大学を志望し受験勉強をするが、思うような結果が出せず挫折を経験する。</p>
           </div>
         </div>
       </div>
       <!-- development -->
       <div class="content" id="content3">
-        <h2 class="content-title">DEVELOPMENT</h2>
+        <h2 class="content-title fadein">DEVELOPMENT</h2>
         <div id="development">
-          <div id="reservation">
+          <div id="reservation" class="fadein">
             <div class="devIcon">
               <img src="images/reservation.png" alt="">
             </div>
@@ -130,7 +137,7 @@
               <a href="https://github.com/Kainn1203/reservationApp.git"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
-          <div id="aid">
+          <div id="aid" class="fadein">
             <div class="devIcon">
               <img src="images/aid.png" alt="">
             </div>
@@ -142,7 +149,7 @@
               <a href="https://github.com/Kainn1203/reservationApp.git"><i class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
-          <div id="portfolio">
+          <div id="portfolio" class="fadein">
             <div class="devIcon">
               <img src="images/portfolio.png" alt="">
             </div>
@@ -157,8 +164,8 @@
       </div>
       <!-- skill -->
       <div class="content" id="content4">
-        <h2 class="content-title">SKILL</h2>
-        <div id="skill">
+        <h2 class="content-title fadein">SKILL</h2>
+        <div id="skill" class="fadein">
           <div id="frontend">
             <div class="skillCulum">
               <h3>フロントエンド</h3>
@@ -186,7 +193,7 @@
         </div>
       </div>
       <!-- contact -->
-      <div class="content" id="content5">
+      <div class="content fadein" id="content5">
         <h2 class="content-title">CONTACT</h2>
         <p><i class="fa-solid fa-envelope"></i> メール：<a href="kai201302@gmail.com">kai201302@gmail.com</a></p>
         <p>SNS：<a href="https://www.instagram.com/kaito_1203?igsh=MWd4a3NybHd6Y2xzag%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i> Instagram</a></p>

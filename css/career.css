@@ -32,10 +32,15 @@
     margin: 5px;
 }
 
+.yearContent:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1rem rgba(0,0,0,.4);
+}
+
 #hoverImage {
     width: 100%;
     border-radius:15px;
-    box-shadow: 20px 20px 0 rgb(190, 238, 237);
+    /* box-shadow: 20px 20px 0 rgb(190, 238, 237); */
 }
 /* 
 #hoverImage::after {
