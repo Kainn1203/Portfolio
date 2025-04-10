@@ -1,9 +1,13 @@
+#content1 {
+  height: 80vh;
+}
+
 #profile {
   margin: auto;
   display: flex;
   max-width: 1200px;
   gap: 30px;
-  padding: 20pxß;
+  padding: 20px;
 }
 
 #profileImage {
@@ -40,10 +44,10 @@
 }
 
 .profileCulum {
-  width : 20%;
+  width: 20%;
 }
 
 .profileBody {
-  width : 80%;
+  width: 80%;
   text-align: left;
 }

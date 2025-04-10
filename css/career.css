@@ -1,59 +1,48 @@
 #career {
-    display: flex;
+  display: flex;
 }
 
 #lineDiv {
-    width: 10%;    
+  width: 10%;
 }
 
-
 #yearContents {
-    width: 40%;
-    display: flex;
-    flex-direction: column; 
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 #hoverContent {
-    max-width: 50%;
-    padding: 10px;
+  max-width: 50%;
+  height: auto;
+  padding: 10px;
 }
 
 #line {
-    width: 4px;
-    background-color: #333;
-    height: 100%;
-    margin: auto;
+  width: 4px;
+  background-color: #333;
+  height: 100%;
+  margin: auto;
 }
 
 .yearContent {
-    border-radius:15px;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
 }
 
 .yearContent:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 1rem rgba(0,0,0,.4);
+  transform: scale(1.02);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
 }
 
 #hoverImage {
-    width: 100%;
-    border-radius:15px;
-    /* box-shadow: 20px 20px 0 rgb(190, 238, 237); */
+  height: 70%;
+
+  border-radius: 15px;
 }
-/* 
-#hoverImage::after {
-    content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: calc(100% - 20px);
-	height: calc(100% - 20px);
-	border-image-source: repeating-linear-gradient(45deg, #fff, #fff 3px, rgba(0 0 0 / 0) 0, rgba(0 0 0 / 0) 6px);
-	border-image-slice: 20;
-	border-image-repeat: round;
-	border-style: solid;
-	border-width: 20px;
-} */
+
+#hoverText {
+  height: 30%;
+}

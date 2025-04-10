@@ -1,30 +1,33 @@
-#reservation, #aid, #portfolio {
-    display: flex;
-    padding: 10px;
+#reservation,
+#aid,
+#portfolio {
+  display: flex;
+  padding: 10px;
 }
 
 .devIcon {
-    width: 30%;
-    padding: 10px;
+  width: 30%;
+  padding: 10px;
 }
 
 .devIcon img {
-    width: 70%;
-    height: auto;
-    padding: 20px;
-    border-radius:30px;
-    background-color:#b8e5dd;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #b8e5dd;
 }
 
 .devText {
-    width: 70%;
-    padding: 10px;
+  width: 70%;
+  padding: 10px;
 }
 
 .devText a {
-    text-decoration: none;
+  /* text-decoration: none; */
+  text-align: right;
 }
 
 a:hover {
-    color : #ff7043;
+  color: #ff7043;
 }
