@@ -1,17 +1,34 @@
 #skill {
-    width : 100%;
+  width: 100%;
 }
 
-#frontend, #backend, #infra{
-    display: flex;
-    justify-content: flex-end;
+.skillIcons {
+  display: flex;
+  align-items: center;
+}
+
+#skill img {
+  height: 80px;
+  padding: 10px;
+}
+
+#skill img.wordmark {
+  height: 40px;
+  padding: 10px;
+}
+
+#frontend,
+#backend,
+#infra {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .skillCulum {
-    width : 20%;
+  width: 20%;
 }
 
 .skillBody {
-    width : 60%;
-    text-align: left;
+  width: 60%;
+  text-align: left;
 }
